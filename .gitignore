@@ -35,6 +35,10 @@ Thumbs.db
 # Vercel
 .vercel
 
+# Demo assets (video, raw recordings — kept local only)
+demo-assets/
+scripts/demo-assets/
+
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
