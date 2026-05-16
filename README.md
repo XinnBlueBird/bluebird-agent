@@ -134,3 +134,5 @@ Set env vars in the Vercel dashboard:
 MIT © 2026 Xinn Sky ([@Xinnsky](https://x.com/Xinnsky))
 
 Built with care, lots of MTProto edge cases, and an unhealthy amount of caffeine.
+
+<!-- auto-deploy verified: 2026-05-16T23:53:49Z -->
