@@ -33,8 +33,9 @@ export function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
+          <a href="#how" className="hover:text-white transition">How</a>
           <a href="#features" className="hover:text-white transition">Features</a>
-          <a href="#demo" className="hover:text-white transition">Live Demo</a>
+          <a href="#demo" className="hover:text-white transition">Demo</a>
           <a href="#architecture" className="hover:text-white transition">Architecture</a>
           <a href="#stats" className="hover:text-white transition">Stats</a>
         </nav>
