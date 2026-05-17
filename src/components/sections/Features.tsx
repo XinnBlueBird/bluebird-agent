@@ -8,27 +8,49 @@ import {
   Activity,
   Wallet,
   Bot,
+  Twitter,
+  Sparkles,
+  Search,
+  Zap,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FEATURES = [
   {
     icon: Radio,
-    title: "16 Intelligence Sources",
+    title: "17 Intelligence Sources",
     desc: "Listens to curated SEA airdrop Telegram channels via MTProto userbot. Real-time, no polling delay.",
     color: "text-bluebird-400",
   },
   {
     icon: Brain,
     title: "Auto-Classifier",
-    desc: "Every link is parsed and routed: tg_bot, web_x_oauth, wnnr_gleam, or skip. Zero manual triage.",
+    desc: "Every link is parsed and routed: tg_bot, web_waitlist, gleam, x_oauth, or tme_tutorial. Zero manual triage.",
     color: "text-violet-400",
   },
   {
     icon: PlayCircle,
-    title: "Playbook Engine",
-    desc: "State-machine playbooks per project type. Math captcha solver, channel joiner, form submitter — all automated.",
+    title: "Multi-Playbook Engine",
+    desc: "Six specialized playbooks: TG bot interaction, generic web waitlist, X OAuth, Gleam.io anti-bot, tutorial link resolver, and MiMo CAPTCHA solver.",
     color: "text-emerald-400",
+  },
+  {
+    icon: Twitter,
+    title: "X OAuth Auto-Auth",
+    desc: "Persistent CloakBrowser X session reuse. One-time login, then auto-authorize 'Connect with X' on any site without re-prompting.",
+    color: "text-sky-400",
+  },
+  {
+    icon: Sparkles,
+    title: "Gleam Anti-Bot Bypass",
+    desc: "Angular scope manipulation for textarea entries, OAuth popup auto-close handling, follow-task verification with intent popups.",
+    color: "text-fuchsia-400",
+  },
+  {
+    icon: Search,
+    title: "Grok X Search",
+    desc: "SuperGrok OAuth integration via xAI Responses API. Real-time X discussion analysis for trending airdrop intel.",
+    color: "text-yellow-400",
   },
   {
     icon: ShieldCheck,
@@ -43,21 +65,27 @@ const FEATURES = [
     color: "text-pink-400",
   },
   {
+    icon: Zap,
+    title: "Tutorial Link Resolver",
+    desc: "Detects intermediate t.me/<channel>/<id> tutorial pointers, fetches the post, extracts the real project URL, then re-classifies and runs.",
+    color: "text-indigo-400",
+  },
+  {
     icon: Activity,
     title: "Forum Recap",
-    desc: "Auto-posts daily recaps 5x/day + weekly Monday reports to a Telegram forum group with 7 dedicated topics.",
+    desc: "Auto-posts daily recaps 5x/day + weekly Monday reports to a Telegram forum group with 7 dedicated topics — per-project status with reasons.",
     color: "text-cyan-400",
   },
   {
     icon: Wallet,
     title: "Multi-Wallet Pool",
-    desc: "Six pre-generated farm wallets accessed via bluebird-pk CLI. Private keys never leave the host.",
+    desc: "Six pre-generated farm wallets accessed via bluebird-pk CLI. Private keys never leave the host. Sybil isolation per ecosystem.",
     color: "text-orange-400",
   },
   {
     icon: Bot,
     title: "Pluggable LLM",
-    desc: "MiMo-VL by default. Falls back to any OpenAI-compatible endpoint via 9Router for high availability.",
+    desc: "FreeModel gpt-5.5 default via 9Router. Falls back to Claude Opus, Grok, or any OpenAI-compatible endpoint for HA.",
     color: "text-rose-400",
   },
 ];

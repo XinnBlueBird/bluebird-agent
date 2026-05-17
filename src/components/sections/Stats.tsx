@@ -7,20 +7,20 @@ const STATS = [
   {
     icon: Radio,
     label: "Sources Monitored",
-    valueProps: { to: 16 },
+    valueProps: { to: 17 },
     sub: "SEA channels · MTProto",
   },
   {
     icon: Database,
     label: "Projects Tracked",
-    valueProps: { to: 43, suffix: "+" },
+    valueProps: { to: 18 },
     sub: "all-time intake",
   },
   {
     icon: CheckCircle2,
     label: "Successful Runs",
-    valueProps: { to: 12 },
-    sub: "this week",
+    valueProps: { to: 7 },
+    sub: "auto-completed (39%)",
   },
   {
     icon: Activity,
