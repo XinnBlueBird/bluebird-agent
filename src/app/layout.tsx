@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     "BlueBird",
   ],
   authors: [{ name: "Xinn Sky", url: "https://x.com/Xinnsky" }],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "BlueBird Agent",
     description:
@@ -36,6 +43,14 @@ export const metadata: Metadata = {
     url: "https://bluebird-agent.vercel.app",
     siteName: "BlueBird Agent",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "BlueBird Agent — Autonomous Crypto Airdrop Intelligence",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -43,6 +58,7 @@ export const metadata: Metadata = {
     description:
       "Autonomous AI-driven crypto airdrop research and execution agent.",
     creator: "@Xinnsky",
+    images: ["/og.png"],
   },
   metadataBase: new URL("https://bluebird-agent.vercel.app"),
 };

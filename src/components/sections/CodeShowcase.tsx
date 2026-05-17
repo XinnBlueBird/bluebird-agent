@@ -42,7 +42,7 @@ export function CodeShowcase() {
   }
 
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative section-perf">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div

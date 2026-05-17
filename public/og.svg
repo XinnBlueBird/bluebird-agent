@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0c1936" />
+    </linearGradient>
+    <linearGradient id="bird" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="55%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <!-- Bluebird centered-right -->
+  <g transform="translate(740, 130) scale(7.2)">
+    <path d="M8 36 L26 26 L34 38 L18 44 Z" fill="url(#bird)" opacity="0.55" />
+    <path d="M22 30 L46 22 L52 34 L40 44 L24 42 Z" fill="url(#bird)" />
+    <path d="M28 30 L48 14 L56 24 L42 34 Z" fill="url(#accent)" />
+    <path d="M50 26 L58 28 L52 32 Z" fill="#0c4a6e" opacity="0.85" />
+    <circle cx="46" cy="26" r="1.4" fill="#f0f9ff" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="80" y="280" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="92" fill="#ffffff" letter-spacing="-2">
+    BlueBird<tspan fill="#38bdf8">.</tspan>Agent
+  </text>
+  <text x="84" y="335" font-family="Inter, system-ui, sans-serif" font-weight="500" font-size="28" fill="#94a3b8" letter-spacing="0.5">
+    Autonomous AI for crypto airdrop intelligence
+  </text>
+
+  <!-- Tag chips -->
+  <g font-family="JetBrains Mono, monospace" font-size="18">
+    <rect x="80" y="430" width="200" height="44" rx="8" fill="#0ea5e9" fill-opacity="0.12" stroke="#0ea5e9" stroke-opacity="0.4" />
+    <text x="180" y="459" text-anchor="middle" fill="#7dd3fc">16 channels live</text>
+
+    <rect x="296" y="430" width="220" height="44" rx="8" fill="#0ea5e9" fill-opacity="0.12" stroke="#0ea5e9" stroke-opacity="0.4" />
+    <text x="406" y="459" text-anchor="middle" fill="#7dd3fc">17 unit tests passing</text>
+
+    <rect x="532" y="430" width="180" height="44" rx="8" fill="#0ea5e9" fill-opacity="0.12" stroke="#0ea5e9" stroke-opacity="0.4" />
+    <text x="622" y="459" text-anchor="middle" fill="#7dd3fc">MIT • production</text>
+  </g>
+
+  <text x="80" y="565" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#475569" letter-spacing="0.5">
+    bluebird-agent.vercel.app
+  </text>
+</svg>

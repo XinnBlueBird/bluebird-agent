@@ -14,9 +14,9 @@ export function Hero() {
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-radial from-bluebird-500/20 via-bluebird-700/10 to-transparent blur-3xl pointer-events-none" />
-      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-bluebird-500/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-bluebird-700/15 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-radial from-bluebird-500/20 via-bluebird-700/10 to-transparent blur-3xl pointer-events-none bg-blob" />
+      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-bluebird-500/20 rounded-full blur-3xl pointer-events-none bg-blob" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-bluebird-700/15 rounded-full blur-3xl pointer-events-none bg-blob" />
 
       <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <motion.div

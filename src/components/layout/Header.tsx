@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import { Github, Twitter, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { Github, Twitter } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Header() {
@@ -9,7 +10,7 @@ export function Header() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -21,11 +22,16 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative">
-            <div className="absolute inset-0 bg-bluebird-500 blur-md opacity-50 group-hover:opacity-75 transition" />
-            <div className="relative w-8 h-8 rounded-lg bg-gradient-to-br from-bluebird-400 to-bluebird-700 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-white" />
-            </div>
+          <div className="relative w-9 h-9">
+            <div className="absolute inset-0 bg-bluebird-500/40 blur-md opacity-60 group-hover:opacity-100 transition" />
+            <Image
+              src="/logo.svg"
+              alt="BlueBird Agent"
+              width={36}
+              height={36}
+              priority
+              className="relative drop-shadow-[0_2px_6px_rgba(56,189,248,0.35)]"
+            />
           </div>
           <span className="font-semibold text-lg tracking-tight">
             BlueBird<span className="text-bluebird-400">.</span>Agent
