@@ -48,9 +48,10 @@ const FEATURES = [
   },
   {
     icon: Search,
-    title: "Grok X Search",
-    desc: "SuperGrok OAuth integration via xAI Responses API. Real-time X discussion analysis for trending airdrop intel.",
+    title: "Grok X Search · Live",
+    desc: "SuperGrok OAuth via xAI Responses API. Real-time X discussion analysis for trending airdrop intel — runs on subscription quota, zero per-call API spend.",
     color: "text-yellow-400",
+    badge: "LIVE",
   },
   {
     icon: ShieldCheck,
@@ -119,6 +120,15 @@ export function Features() {
               className="group relative p-5 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/10 transition"
             >
               <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition pointer-events-none" />
+              {f.badge && (
+                <span className="absolute top-3 right-3 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-[9px] font-mono font-bold tracking-wider text-emerald-300">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400" />
+                  </span>
+                  {f.badge}
+                </span>
+              )}
               <f.icon className={`w-5 h-5 mb-3 ${f.color}`} />
               <h3 className="font-semibold mb-1.5 tracking-tight">{f.title}</h3>
               <p className="text-sm text-white/55 leading-relaxed">{f.desc}</p>

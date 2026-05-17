@@ -46,8 +46,9 @@ export function Hero() {
 
           <p className="text-lg text-white/70 max-w-xl mb-8 leading-relaxed">
             BlueBird is an AI-driven research and execution agent. It listens to
-            16 plus Telegram intelligence channels, classifies airdrops by
-            playbook, and executes — fully autonomously, 24 by 7.
+            17 Telegram intelligence channels, taps SuperGrok for live X
+            sentiment, classifies airdrops by playbook, and executes — fully
+            autonomously, 24 by 7.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 mb-8">
@@ -89,7 +90,7 @@ export function Hero() {
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>Agent online</span>
             </div>
-            <div>16 sources monitored</div>
+            <div>17 sources monitored</div>
             <div>Zero halu policy</div>
           </div>
         </motion.div>

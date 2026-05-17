@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { LiveDemo } from "@/components/sections/LiveDemo";
+import { LiveIntel } from "@/components/sections/LiveIntel";
 import { CodeShowcase } from "@/components/sections/CodeShowcase";
 import { Architecture } from "@/components/sections/Architecture";
 import { Stats } from "@/components/sections/Stats";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Hero />
         <HowItWorks />
         <Features />
+        <LiveIntel />
         <LiveDemo />
         <CodeShowcase />
         <Architecture />
